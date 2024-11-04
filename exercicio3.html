@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lendo um vetor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lendo um vetor</h1>
+        <input type="number" id="numero" placeholder="Digite um número">
+        <button onclick="Guardar()">Guardar</button>
+        <button onclick="NumerosMaiores()">Números maiores que a média</button>
+    </div>
+    <script>
+        let numeros = [];
+        let num = 0;
+        let qntd = 0;
+        let media = 0;
+        let total = 0;
+
+        function Guardar() {
+            num = parseInt(document.getElementById("numero").value);
+            numeros.push(numero);
+            document.getElementById("numero").value = "";
+        }
+
+        function NumerosMaiores() {
+            total = 0;
+            let nummaior = [];
+            numeros.forEach(function (num) {
+                total += num; 
+            });
+
+            qntd = numeros.length;
+            media = total / qntd;
+            numeros.forEach(function(num) {
+                if(num > media){
+                nummaior.push(num);
+                }
+            });
+            for (let i = 0; i < nummaior.length; i++) {
+                alert(nummaior[i]);
+            }
+        }
+    </script>
+</body>
+</html>

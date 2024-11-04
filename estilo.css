@@ -1,0 +1,22 @@
+body {
+    background-color: #92bce4;
+    color: #040238;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #06048c;
+}
+button {
+    background-color: #3861da; 
+    color: #030258;
+    border-radius: 5px #383838 ;
+    padding: 10px;
+}
